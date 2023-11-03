@@ -1,0 +1,3 @@
+.desktop-nav{
+    @apply flex py-4 gap-5 flex-col  justify-between bg-white 2md:gap-0 2md:flex-row 2md:items-center ;
+}
