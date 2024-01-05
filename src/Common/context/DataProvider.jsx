@@ -344,7 +344,7 @@ const DataProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("cart")) || []
   );
   const [renderCart, setRenderCart] = useState(1);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({name:"Test User", role:"user"});
   const [wishList, setWishList] = useState([]);
   const [category, setCategory] = useState(categories[0]);
   const [active, setActive] = useState("dashboard");
