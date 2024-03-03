@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MenuIcon from "../../Common/Icons/MenuIcon";
 import MobileSidebar from "./components/MobileSidebar/Mobilesidebar";
@@ -7,6 +7,9 @@ import PageBottomProduct from "../../Common/PageBottom/PageBottomProduct";
 import PageBottom from "../../Common/PageBottom/PageBottom";
 
 const Dashboard = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <MobileSidebar />
@@ -14,7 +17,9 @@ const Dashboard = () => {
         <Sidebar />
         <div className=" w-full 2md:w-[calc(100%-280px)] ">
           <div className="flex justify-between items-center">
-            <h2 className="text-3xl leading-none text-primary font-semibold ">My Orders</h2>
+            <h2 className="text-3xl leading-none text-primary font-semibold ">
+              My Orders
+            </h2>
 
             <label htmlFor="my-drawer">
               <a className="d-block 2md:hidden text-primary hover:text-secondary cursor-pointer ">
